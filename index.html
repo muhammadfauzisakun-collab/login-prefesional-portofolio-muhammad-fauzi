@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Dashboard - Luxury Portfolio</title>
+    <link rel="stylesheet" href="styles login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <h2>Muhammad Fauzi</h2>
+        </div>
+        <div class="login-form">
+            <h1>Login to Dashboard</h1>
+            <p>Access your exclusive luxury portfolio dashboard.</p>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username or Email</label>
+                    <input type="text" id="username" placeholder="Enter your username or email" required aria-label="Username or Email" aria-describedby="usernameError">
+                    <span id="usernameError" class="error-text" role="alert"></span>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password (min 8 chars)" required aria-label="Password" aria-describedby="passwordError">
+                    <span id="passwordError" class="error-text" role="alert"></span>
+                </div>
+                <div class="input-group remember-me">
+                    <input type="checkbox" id="rememberMe" aria-label="Remember Me">
+                    <label for="rememberMe">Remember Me</label>
+                </div>
+                <button type="submit" class="btn-login" id="loginBtn">
+                    <span class="btn-text">Login</span>
+                    <div class="spinner" id="spinner"></div>
+                </button>
+            </form>
+            <div class="error-message" id="errorMessage" role="alert"></div>
+            <p class="forgot-password"><a href="#" id="forgotLink">Forgot Password?</a></p>
+        </div>
+    </div>
+    <script src="script login.js"></script>
+</body>
+</html>
