@@ -67,7 +67,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
             }
 
             // Redirect to change password page after login
-            window.location.href = "https://prefesional-portofolio-muhammad-fau-nine.vercel.app/"; // Redirect to change password page
+            window.location.href = "https://dashboard-portofolio-muhammad-fauzi.vercel.app/"; // Redirect to change password page
         } else {
             errorMessage.textContent = 'Invalid username or password.';
             loginBtn.disabled = false;
@@ -94,4 +94,5 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' && document.activeElement.tagName !== 'BUTTON') {
         document.getElementById('loginForm').dispatchEvent(new Event('submit'));
     }
+
 });
