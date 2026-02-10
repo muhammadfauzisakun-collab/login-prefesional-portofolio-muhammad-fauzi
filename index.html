@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Porto - Muhammad Fauzi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="nav-ul">
+                    <h1 class="nav-h1">Muhammad Fauzi</h1>
+                    <div class="container-nav">
+                    <li class="nav-li"><a href="#hero">Home</a></li>
+                    <li class="nav-li"><a href="#about">About</a></li>
+                    <li class="nav-li"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-li"><a href="#skills">Skills</a></li>
+                    <li class="nav-li"><a href="#testimonials">Testimonials</a></li>
+                    <li class="nav-li"><a href="#contact">Contact</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+
+    <!-- SECTION HERO - VIDEO -->
+    <section id="hero" class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="dashboard.mp4" type="video/mp4">
+            <!-- Ganti dengan video luxury Anda, atau gunakan gambar statis -->
+        </video>
+        <div class="hero-overlay">
+            <div class="container-hero">
+                <h2 class="animate-text">Welcome to My Portofolio</h2>
+                <p>Designer & Developer with a passion for elegance and innovation.</p>
+                <a href="#about" class="btn">Explore More</a>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION HERO - VIDEO END -->
+
+
+    <!-- SECTION ABOUT -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p style="margin-bottom: 40px;">As a website programmer, I am a passionate individual with a strong interest in digital technology and modern web development. I specialize in designing, building, and maintaining websites that are not only visually appealing but also functional, efficient, and user-friendly. My work focuses on creating digital solutions that meet user needs while aligning with business goals. I am experienced in using various web technologies such as HTML, CSS, and JavaScript, along with modern frameworks and tools that allow me to develop responsive and adaptive websites across different devices and screen sizes. I pay close attention to layout, performance, and usability to ensure that every website delivers a smooth and engaging user experience. 
+            <p style="margin-bottom: 40px;">In addition to front-end development, I have a solid understanding of back-end concepts, including server-side logic, database management, and API integration. This allows me to approach web development from a full-stack perspective, ensuring that both the visual and functional aspects of a website work seamlessly together. I value clean, well-structured, and maintainable code, as I believe that a strong technical foundation is essential for scalability, security, and long-term sustainability. Problem-solving is a core part of my daily work, and I enjoy analyzing issues, debugging errors, and finding efficient solutions to technical challenges. </p>
+            <p style="margin-bottom: 40px;">Continuous learning is an important part of my journey as a website programmer. The web development landscape evolves rapidly, and I actively stay updated with the latest trends, tools, and best practices in the industry. I am always eager to explore new technologies, improve my skills, and adapt to changes in order to remain relevant and competitive. Whether working independently or collaborating within a team, I value clear communication and effective collaboration with designers, project managers, and clients to translate ideas and requirements into reliable technical solutions. I am a disciplined, detail-oriented, and responsible professional who takes pride in delivering high-quality results. I understand that a website often represents a brand’s digital identity, so I am committed to ensuring that every project reflects professionalism, consistency, and reliability. For me, being a website programmer is not just about writing code, but about combining logic, creativity, and innovation to build me</p>
+            <img src="img.jpg" alt="Foto Profil - Desainer Mewah">
+            <div class="stats">
+                <div class="stat"><span>50+</span> Projects Completed</div>
+                <div class="stat"><span>5+</span> Years Experience</div>
+                <div class="stat"><span>100%</span> Client Satisfaction</div>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION ABOUT END -->
+
+
+    <!-- SECTION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Professional Web Projects With Elegant Design</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="app">App Development</button>
+                <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+            </div>
+            <div class="gallery">
+                <div class="item web" onclick="openLightbox('https://via.placeholder.com/800x600/D4AF37/000?text=Web+Project+1', 'Detail proyek web mewah dengan teknologi terdepan.')">
+                    <img src="img.jpg" alt="Proyek Web 1">
+                    <div class="overlay">Web Project 1</div>
+                </div>
+                <div class="item app" onclick="openLightbox('https://via.placeholder.com/800x600/D4AF37/000?text=App+Project+2', 'Aplikasi mobile dengan desain luxury.')">
+                    <img src="img.jpg" alt="Proyek App 2">
+                    <div class="overlay">App Project 2</div>
+                </div>
+                <div class="item graphic" onclick="openLightbox('https://via.placeholder.com/800x600/D4AF37/000?text=Graphic+Project+3', 'Desain grafis eksklusif untuk branding.')">
+                    <img src="img.jpg" alt="Proyek Graphic 3">
+                    <div class="overlay">Graphic Project 3</div>
+                </div>
+                <!-- Tambahkan lebih banyak item sesuai kebutuhan -->
+            </div>
+        </div>
+        
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-img" src="" alt="Gambar Proyek">
+            <p id="lightbox-desc"></p>
+        </div>
+        <!-- Lightbox Modal End-->
+    </section>
+    <!-- SECTION ABOUT END -->
+
+
+    <!-- SECTION SKILLS - ANIMASI BAR -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skill">
+                <label>HTML/CSS</label>
+                <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
+                <span class="tooltip">Expert in responsive design</span>
+            </div>
+            <div class="skill">
+                <label>JavaScript</label>
+                <div class="progress-bar"><div class="progress" data-width="80%"></div></div>
+                <span class="tooltip">Proficient in modern frameworks</span>
+            </div>
+            <div class="skill">
+                <label>UI/UX Design</label>
+                <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+                <span class="tooltip">Creating intuitive user experiences</span>
+            </div>
+            <div class="skill">
+                <label>Graphic Design</label>
+                <div class="progress-bar"><div class="progress" data-width="75%"></div></div>
+                <span class="tooltip">Branding and visual identity</span>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION SKILLS - ANIMASI BAR END -->
+
+
+    <!-- SECTION TESTIMONIALS -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <h3>- John Doe, CEO Company -</h3>
+                    <p >"An outstanding collaboration resulted in a design that is truly luxurious, modern, and highly functional, combining elegant aesthetics with ease of use, optimal performance, professional detailing, clean layouts, full responsiveness across all devices, and a significant boost to brand value and user trust."</p>
+                </div>
+                <div class="testimonial">
+                    <h3>- Jane Smith, Designer -</h3>
+                    <p>"The final result truly exceeded expectations, delivering a highly professional design with clean details and optimal functionality. The workflow was smooth, communicative, and completed on time. Highly recommended for anyone seeking high-quality, reliable design services they can truly depend on."</p>
+                </div>
+                <div class="testimonial">
+                    <h3>- Alex Johnson, Entrepreneur -</h3>
+                    <p>"Professional and highly detail-oriented throughout the entire process, ensuring every aspect of the project met high standards. The project was completed on time with clear, responsive communication. The final result is polished, functional, visually appealing, and adds real value to the business. Highly reliable and strongly recommended."</p>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button onclick="prevTestimonial()">&#10094;</button>
+                <button onclick="nextTestimonial()">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION TESTIMONIALS END -->
+
+
+    <!-- SECTION CONTACT -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input style="font-family:Arial, Helvetica, sans-serif" type="text" id="name" placeholder="Your Name" required aria-label="Name">
+                <input style="font-family:Arial, Helvetica, sans-serif" type="email" id="email" placeholder="Your Email" required aria-label="Email">
+                <textarea style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif;" id="message" placeholder="Your Message" required aria-label="Message" ></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p>Email: muhammadfauzi.s.akun@gmail.com</p>
+                <p1>Phone: +62831-89412-0000</p1>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION CONTACT END -->
+
+
+    <!-- SECTION FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; Since 2022 Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+            </div>
+        </div>
+    </footer>
+    <!-- SECTION FOOTER END -->
+
+
+    <script src="script.js"></script>
+</body>
+</html>
